@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="Sync"
+        android:id="@+id/sync"
+        android:icon="@drawable/ic_sync"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="100" />
+    <item
+        android:title="DeSync"
+        android:id="@+id/sync_dis"
+        android:icon="@drawable/ic_sync_dis"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="110" />
+    <item
+        android:title="Save"
+        android:id="@+id/save"
+        android:icon="@drawable/ic_save"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="120" />
+    <item
+        android:title="Delete"
+        android:id="@+id/delete"
+        android:icon="@drawable/ic_delete"
+        app:showAsAction="ifRoom"
+        android:orderInCategory="150" />
+</menu>

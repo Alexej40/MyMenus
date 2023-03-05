@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bm_image"
+        android:icon="@drawable/ic_image"
+        android:title="Image"
+        android:orderInCategory="10"/>
+    <item
+        android:id="@+id/bm_location"
+        android:icon="@drawable/ic_add_location"
+        android:title="Location"
+        android:orderInCategory="5"/>
+    <item
+        android:id="@+id/bm_my_location"
+        android:icon="@drawable/ic_my_location"
+        android:title="MyLocation"
+        android:orderInCategory="15"/>
+    <item
+        android:id="@+id/bm_location_disabled"
+        android:icon="@drawable/ic_location_disabled"
+        android:title="Location_Disabled"
+        android:orderInCategory="14"/>
+
+</menu>
