@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MultiActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/multiTView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#A6ACB1"
+        android:text="Текст для экспериментов"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_begin="164dp" />
+
+    <ImageButton
+        android:id="@+id/multiIButton"
+        android:layout_width="113dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="244dp"
+        android:onClick="multiIButtonOnClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/orange_flower"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <RadioGroup
+        android:id="@+id/multiRG1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <RadioButton
+            android:id="@+id/multiRBAnim1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/multiRBAnim2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="RadioButton" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/multiRG2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="216dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <RadioButton
+            android:id="@+id/multiRBStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Запустить" />
+
+        <RadioButton
+            android:id="@+id/multiRBStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_marginTop="16dp"
+            android:text="Остановить" />
+    </RadioGroup>
+
+    <SeekBar
+        android:id="@+id/multiSBRed"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:max="255"
+        android:progress="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="R:"
+        app:layout_constraintEnd_toStartOf="@+id/multiSBRed"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="G:"
+        app:layout_constraintEnd_toStartOf="@+id/multiSBGreen"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="B:"
+        app:layout_constraintEnd_toStartOf="@+id/multiSBBlue"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <SeekBar
+        android:id="@+id/multiSBGreen"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:max="255"
+        android:progress="0"
+        app:layout_constraintEnd_toEndOf="@+id/multiSBRed"
+        app:layout_constraintTop_toBottomOf="@+id/multiSBRed" />
+
+    <SeekBar
+        android:id="@+id/multiSBBlue"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:max="255"
+        android:progress="0"
+        app:layout_constraintEnd_toEndOf="@+id/multiSBRed"
+        app:layout_constraintTop_toBottomOf="@+id/multiSBGreen" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

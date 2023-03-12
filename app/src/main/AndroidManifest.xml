@@ -10,6 +10,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyMenus">
         <activity
+            android:name=".FilesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MultiColorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MultiActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DrawerActivity" />
+        <activity
+            android:name=".NavigationActivityHeader"
+            android:exported="false" />
+        <activity
+            android:name=".NavigationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DrawerActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DrawerActivity" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

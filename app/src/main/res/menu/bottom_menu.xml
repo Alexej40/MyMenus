@@ -3,12 +3,12 @@
     <item
         android:id="@+id/bm_image"
         android:icon="@drawable/ic_image"
-        android:title="Image"
+        android:title="Navigation View"
         android:orderInCategory="10"/>
     <item
         android:id="@+id/bm_location"
         android:icon="@drawable/ic_add_location"
-        android:title="Location"
+        android:title="Drawer Layout"
         android:orderInCategory="5"/>
     <item
         android:id="@+id/bm_my_location"
